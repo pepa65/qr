@@ -1,6 +1,6 @@
 [package]
 name = "eqr"
-version = "1.9.82"
+version = "1.9.83"
 edition = "2024"
 authors = ["github.com/pepa65 <pepa65@passchier.net>", "Marco Radocchia <mar.radocchia@proton.me>"]
 description = "Encode text into svg/png/jpg/terminal-format QR codes with optional logo"
@@ -27,22 +27,22 @@ target-family = "Linux"
 target-arch = "X86_64"
 
 [dependencies]
-qrcodegen = "1.8.0"
-clap = { version = "4.5.26", features = ["derive"] }
+qrcodegen = "1.8"
+clap = { version = "4.6", features = ["derive"] }
 termcolor = "1.4.1"
 dialoguer = "0.12"
-regex = "1.11.1"
-lazy_static = "1.5.0"
-image = "0.25.5"
-tempfile = "3.17.0"
+regex = "1.13"
+lazy_static = "1.5"
+image = "0.25"
+tempfile = "3"
 
 [build-dependencies]
-clap = { version = "4.5.26", features = ["derive"] }
-clap_mangen = "0.2.26"
-clap_complete = "4.5.42"
+clap = { version = "4.6", features = ["derive"] }
+clap_mangen = "0.3"
+clap_complete = "4.6"
 qrcodegen = "1.8.0"
 lazy_static = "1.5.0"
-regex = "1.11.1"
+regex = "1.13"
 
 [profile.release]
 opt-level = "z"
