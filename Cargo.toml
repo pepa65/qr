@@ -33,7 +33,7 @@ termcolor = "1.4.1"
 dialoguer = "0.12"
 regex = "1.13"
 lazy_static = "1.5"
-image = "0.25"
+image = { version = "0.25", default-features = false, features = ["jpeg", "png", "webp", "gif"] }
 tempfile = "3"
 
 [build-dependencies]
